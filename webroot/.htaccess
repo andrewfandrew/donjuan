@@ -1,0 +1,9 @@
+// Disable directory spying
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+  RewriteRule ^(.*)$ index.php?$1 [QSA,L]
+</IfModule>
+
+RewriteEngine On
+RewriteBase /
